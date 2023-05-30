@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+body, html{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+h1{
+    text-align: center;
+    color: navy;
+    font-size: 80px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: azure;
+}
+h3{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+
+}
+
+@media(min-width: 700px){
+    h1{
+        font-size: 150px;
+        color: red;
+    }
+    body{
+        background-color: pink;
+    }
+}
+
+/* Au dessus de 800px, le body prend pour couleur de fond black, que le texte soit blanc et que la taille du titre soit de 40px */
+
+/* media query, au-delÃ  de 800 px on y applique les modifications suivantes*/
+@media(min-width: 800px){
+    body{
+        background-color: black;
+        color: aliceblue; 
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 850px){
+    h1{
+        color: aqua;
+        font-size: 200px;
+    }
+    body{
+        background: linear-gradient(45deg, teal 30%, cyan 60%, red 80%);
+    }
+}
